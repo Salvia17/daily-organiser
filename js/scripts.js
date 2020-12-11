@@ -6,25 +6,21 @@ function newItem () {
   li.append(inputValue);
 
   if (inputValue === '') {
-    alert("You must write something!");
+    alert('You must write something!'');
   } else {
     $('#list').append(li);
   };
 
 //Adding a cross out function for the list os items
   function crossOut() {
-    li.toggleClass("strike");
+    li.toggleClass('strike');
   };
 
+//Adding event listener for double click on the list item
+//Crosses out the list item
   li.on('dblclick', function crossOut(){
-    li.toggleClass("strike");
+    li.toggleClass('strike');
   });
-
-
-
-
-
-
 
 
 }
