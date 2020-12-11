@@ -22,5 +22,10 @@ function newItem () {
     li.toggleClass('strike');
   });
 
+  //Adding the "x" delete button
+    let deleteButton = $('<deleteButton></deleteButton>');
+    deleteButton.append(document.createTextNode('x'));
+    li.append(deleteButton);
+
 
 }
