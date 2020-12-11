@@ -11,7 +11,15 @@ function newItem () {
     $('#list').append(li);
   };
 
-  
+//Adding a cross out function for the list os items
+  function crossOut() {
+    li.toggleClass("strike");
+  };
+
+  li.on('dblclick', function crossOut(){
+    li.toggleClass("strike");
+  });
+
 
 
 
