@@ -22,10 +22,18 @@ function newItem () {
     li.toggleClass('strike');
   });
 
-  //Adding the "x" delete button
-    let deleteButton = $('<deleteButton></deleteButton>');
-    deleteButton.append(document.createTextNode('x'));
-    li.append(deleteButton);
+//Adding the "x" delete button
+  let deleteButton = $('<deleteButton></deleteButton>');
+  deleteButton.append(document.createTextNode('x'));
+  li.append(deleteButton);
 
+//Adding event listener for single click on the list item
+//Deletes the list item
+  deleteButton.on('click', deleteListItem);
+  function deleteListItem () {
+    li.addClass('delete');
+  };
 
+    //Allows reordering of items
+      $('#list').sortable();
 }
