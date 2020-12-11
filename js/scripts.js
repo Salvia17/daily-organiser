@@ -6,7 +6,7 @@ function newItem () {
   li.append(inputValue);
 
   if (inputValue === '') {
-    alert('You must write something!'');
+    alert("You must write something!");
   } else {
     $('#list').append(li);
   };
@@ -35,5 +35,5 @@ function newItem () {
   };
 
     //Allows reordering of items
-      $('#list').sortable();
+  $('#list').sortable();
 }
