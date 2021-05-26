@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple to do list application built using HTML, CSS, and JavaScript.
+This is a simple to do list application built using HTML, CSS, JavaScript and JQuery.
 
 ### View it live [HERE](https://salvia17.github.io/daily-organiser/)
 
@@ -11,6 +11,7 @@ This is a simple to do list application built using HTML, CSS, and JavaScript.
 - HTML
 - CSS
 - JavaScript
+- JQuery
 
 ## Key Features:
 
